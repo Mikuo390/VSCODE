@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 书写css样式 */
+        .headDiv{
+            height: 50px;
+        }
+        .leftDiv{
+            /* 让他的宽高由内容自动撑大 */
+            float: left;
+        }
+        .rightDiv{
+            
+            float: right;
+        }
+        .a1{
+            color: black;
+            font-size: 16px;
+            /* 装饰： */
+            text-decoration: none;
+            /* 盒子与右边的盒子间距为30px */
+            margin-right: 30px;
+        }
+        .a1:hover{
+            color: blue;
+        }
+        .a2{
+            color: black;
+            font-size: 16px;
+            /* 装饰： */
+            text-decoration: none;
+            /* 盒子与左边的盒子间距为30px */
+            margin-left: 30px;
+        }
+        .a2:hover{
+            color: blue;
+        }
+        .a3{
+            font-size: 16px;
+            /* 装饰： */
+            text-decoration: none;
+            /* 盒子与左边的盒子间距为30px */
+            margin-left: 30px;
+            /* 更改样式 */
+            color: white;
+            background-color: blue;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+        
+        /* imgDiv */
+        .imgDiv{
+            /* 内容居中对齐 */
+            text-align: center;
+        }
+        .img1{
+            height: 130px;
+        }
+
+        /* inputDiv */
+        .inputDiv{
+            width: 600px;
+            height: 50px;
+            margin: auto;
+            margin-top: 15px;
+        }
+        .left{
+            width: 83%;
+            height: 100%;
+            /* 加三条边 */
+            border-style: solid;
+            border-color: gainsboro;
+            border-width: 2px;
+            border-right-width: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            outline: none;
+            font-size: 17px;
+            padding-left: 15px;
+            /* 因为padding跟border是会撑大宽高，所以实际大小 大于83% */
+            box-sizing: border-box;
+
+            float: left;
+        }
+        .baiduDiv{
+            width: 17%;
+            height: 100%;
+            background-color: blue;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+            line-height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 做一个前端界面之前，一定要先划分区域 -->
+    <div class="headDiv">
+        <!-- left -->
+        <div class="leftDiv">
+            <a href="http://news.baidu.com" class="a1">新闻</a>
+            <a href="" class="a1">hao123</a>
+            <a href="" class="a1">地图</a>
+            <a href="" class="a1">直播</a>
+            <a href="" class="a1">视频</a>
+            <a href="" class="a1">贴吧</a>
+            <a href="" class="a1">学术</a>
+            <a href="" class="a1">更多</a>
+        </div>
+        <!-- right -->
+        <div class="rightDiv">
+            <a href="" class="a2">设置</a>
+            <a href="" class="a3">登录</a>
+        </div>
+    </div>
+
+    <!-- 图片 -->
+    <div class="imgDiv">
+        <img class="img1" src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="">
+    </div>
+
+    <!-- 输入框 -->
+    <div class="inputDiv">
+        <!-- 输入div -->
+        <input class="left"></input>
+        <!-- 百度一下 -->
+        <div class="baiduDiv">百度一下</div>
+    </div>
+</body>
+</html>
